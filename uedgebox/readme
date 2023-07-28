@@ -1,0 +1,6 @@
+python -i run2steady.py
+
+or
+
+python
+exec(open("./run2steady.py").read())

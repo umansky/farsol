@@ -1,0 +1,20 @@
+1) Install UEDGE using pip
+pip install forthon
+pip install mppl
+pip install uedge
+
+Note: Detailed insructions in https://github.com/LLNL/UEDGE/wiki/1)-Obtaining-UEDGE-and-installing-with-Python
+
+
+2) Install uedge_mvu tools
+git clone ssh://git@github.com/umansky/uedge_mvu
+
+Run the following command inside the directory containing setup.py:
+pip install --editable . --user
+
+Note: Detailed instructions in https://github.com/umansky/uedge_mvu/blob/master/README.md
+
+
+3) Run the simulation doing:
+cd uedgebox
+python -i run2steady.py
