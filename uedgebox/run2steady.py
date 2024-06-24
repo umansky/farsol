@@ -21,8 +21,8 @@ bbb.tis=bbb.ev;   bbb.ti=bbb.ev
 #-run to steady state
 bbb.restart=1; bbb.ftol=1e-8;
 bbb.dtreal=1e-10; bbb.isbcwdt=1; bbb.exmain()
-#rundt()
-hdf5_restore("cmod_box3.h5")
+rundt()
+#hdf5_restore("cmod_box3.h5")
 bbb.dtreal=1e20; bbb.isbcwdt=0; bbb.exmain()
 mu.paws("Expecting a converged solution now")
 
